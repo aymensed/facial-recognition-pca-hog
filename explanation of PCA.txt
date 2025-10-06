@@ -1,0 +1,32 @@
+What PCA Does:
+Principal Component Analysis (PCA) is a dimensionality reduction technique that transforms high-dimensional data into a smaller number of dimensions while retaining as much variance (information) as possible.
+
+Extracts Key Features: PCA identifies the most important directions (principal components) in the data that capture the most variation.
+Reduces Complexity: By reducing the number of dimensions, it simplifies the dataset while preserving its essential structure.
+Improves Efficiency: Reducing dimensions lowers computational requirements and helps avoid the "curse of dimensionality."
+PCA in Face Recognition:
+High Dimensionality of Images:
+
+A grayscale image of size 112×92 has 112×92=10,304
+112×92=10,304 pixels (dimensions).
+Each image is treated as a point in this high-dimensional space, making it computationally expensive.
+
+Capturing Important Features:
+Faces have redundant information (e.g., smooth regions of skin).
+PCA focuses on the key variations (like facial contours, eyes, nose, etc.) while discarding less significant details.
+Projection onto a Subspace:
+
+PCA projects face images into a lower-dimensional "face space."
+Each face is represented by a few numbers (principal components) instead of thousands of pixels.
+Face Recognition:
+
+PCA helps to differentiate between faces by analyzing variations in the most significant components.
+For example, in Eigenfaces (a PCA-based method), the principal components represent "basis faces," and each face is a combination of these bases.
+Why PCA is Needed in Face Recognition:
+Efficiency: Reduces the size of the dataset, making computations faster.
+Noise Reduction: Removes irrelevant details, focusing on meaningful variations.
+Feature Extraction: Provides a compact, meaningful representation of faces that is easier for machine learning models to process.
+In summary, PCA transforms the raw pixel data of faces into a smaller, more informative feature space, making face recognition computationally feasible and effective. Let me know if you'd like further clarification!
+
+
+** HOG: Extracts edge and gradient-based features from the images. **
